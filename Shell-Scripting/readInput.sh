@@ -35,14 +35,30 @@ echo $@ #print the arguments passed
 echo $# #print the numeber os arguments passed
 
 # If Statement 
-
 count=10
 if [ $count -gt 9 ]     #for -eq -ne -gt -ge -lt -le uses [ ]
 then
     echo "Condition is True"
+else
+    echo "Condition is False"
 fi
 
-if (($count > 9))       #for < <= > >= uses (( ))
+count=10
+if (($count > 12))       #for < <= > >= uses (( ))
 then
     echo "Condition is True"
+else
+    echo "Condition is False"
 fi
+
+word=c
+if [[ $word == "b" ]] 
+then
+    echo "Condition b is True"
+elif [[ $word == "a" ]]
+then
+    echo "Condition a is True"
+else
+    echo "Condition is False"
+
+# File Test Operator
