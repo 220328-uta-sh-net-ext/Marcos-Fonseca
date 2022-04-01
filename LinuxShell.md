@@ -18,19 +18,34 @@ For many people, Linux is merely an operating system. This definition is not wro
 - External commands - separate binaries stored in /sbin, /usr/sbin, /usr/bin, /bin, or /usr/local/bin directories.
 
 **Basic Terminal Navigation Commands:**
+
 *ls :* To get the list of all the files or folders.
+
 *ls -l:* Optional flags are added to ls to modify default behavior, listing contents in extended form -l is used for “long” output
+
+
 *ls -a:* Lists of all files including the hidden files, add -a  flag 
+
 *cd:* Used to change the directory.
+
 *du:* Show disk usage.
+
 *pwd:* Show the present working directory.
+
 *man:* Used to show the manual of any command present in Linux.
+
 *rmdir:* It is used to delete a directory if it is empty.
+
 *ln file1 file2:* Creates a physical link.
+
 *ln -s file1 file2:* Creates a symbolic link.
+
 *locate:* It is used to locate a file in Linux System
+
 *echo:*  This command helps us move some data, usually text into a file.
+
 *df:* It is used to see the available disk space in each of the partitions in your system.
+
 *tar:* Used to work with tarballs or files compressed in a tarball archive
 
 ## c) The Shell Variables and Environment
@@ -38,6 +53,9 @@ For many people, Linux is merely an operating system. This definition is not wro
 Created and maintained by Linux bash shell itself. This type of variable (with the exception of auto_resume and histchars) is defined in CAPITAL LETTERS. You can configure aspects of the shell by modifying system variables such as PS1, PATH, LANG,HISTSIZE,and DISPLAY etc.
 
 BASH_VERSION 	Holds the version of this instance of bash. 	echo $BASH_VERSION
+
 HOSTNAME 	The name of the your computer. 	echo $HOSTNAME
+
 CDPATH 	The search path for the cd command. 	echo $CDPATH
+
 HISTFILE 	The name of the file in which command history is saved. 	echo $HISTFILE  
