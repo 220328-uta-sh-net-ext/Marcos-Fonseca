@@ -1,6 +1,10 @@
 #! /usr/bin/bash
 
-while IFS= read -r line 
+echo "pid is $$"
+while (( COUNT < 10 ))
 do
-    echo    $line
-done < README.md
+    sleep 1
+    (( COUNT ++ ))
+    echo $COUNT
+done
+exit 0

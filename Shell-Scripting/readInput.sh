@@ -193,4 +193,132 @@ do
 done < README.md
 
 # 18) UNTIL loop
+n=1
+until [ $n -ge 10 ] #or (( $n > 10 ))
+do
+    echo $n
+    n=$((n+1))  
+done
+
+# 19) FOR loop
+echo ${BASH_VERSION}
+for (( i=0; i<5; i++ )) # {1..100..20}
+do
+echo $i
+done
+
+# 20) FOR loop to execute commands
+for command in ls pwd date
+do
+echo "-----------$command-------------"
+$command
+done
+
+for item in *
+do
+    if [ -d $item ]
+    then
+        echo $item
+    fi 
+done
+
+# 21) Select loop (When you need a Menu)
+select name in Mark John Tom Ben 
+do
+    case $name in 
+    Mark)
+        echo Mark selected
+        ;;
+    John)
+        echo Mark selected
+        ;;
+    Tom)
+        echo Mark selected
+        ;;
+    Ben)
+        echo Mark selected
+        ;;
+    *) #Default Pick
+        echo "Error, please provide a pick"
+    esac    
+done
+
+# 22) Break and continue
+
+for (( i=1 ; i<=10 ; i++)) 
+do
+    if [ $i -gt 5 ]
+    then
+        break #BREAK
+    fi 
+    echo "$i"
+done
+
+for (( i=1 ; i<=10 ; i++)) 
+do
+    if [ $i -eq 3 -o $i -eq 6 ]
+    then
+        continue #CONTINUE
+    fi 
+    echo "$i"
+done
+
+
+# 23) Functions
+function print(){
+    echo $1
+}
+
+quit (){
+    exit
+}
+
+print Hello
+print World
+
+echo "foo"
+
+quit
+
+# 24) Local Variables
+function print(){
+    local name=$1
+    echo "The name is $name"
+}
+name="Tom"
+echo "The name is $name : before"
+print max
+echo "The name is $name : after"
+
+# 25) Functions Example
+usage() {
+    echo "You need to provide an argument : "
+    echo "Usage : $0 file_name"
+}
+
+is_file_exist() {
+    local file="$1"
+    [[ -f "$file" ]] && return 0 || return 1
+}
+
+[[ $# -eq 0 ]] && usage
+
+if ( is_file_exist "$1" )
+then
+    echo "File Found"
+else
+    echo "File not found"
+fi
+
+# 27) Signals and Traps
+echo "pid is $$"
+while (( COUNT < 10 ))
+do
+    sleep 1
+    (( COUNT ++ ))
+    echo $COUNT
+done
+exit 0
+
+
 
