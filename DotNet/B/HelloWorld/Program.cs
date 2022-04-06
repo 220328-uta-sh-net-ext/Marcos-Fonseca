@@ -9,7 +9,7 @@ namespace HelloWorld
     {
         // Main entry point - each project should have only 1 entry point (Main)
         public static void Main()
-        {   
+        {
             // Comments - Single line. Comments are not processed by Compiler and CLR
 
             /* 
@@ -29,10 +29,10 @@ namespace HelloWorld
             Mathematics.DataTypes();
         }
     }
-   
+
 }
 
 namespace ExternalWorld
 {
-     public class Program{}
+    public class Program { }
 }
