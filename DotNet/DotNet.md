@@ -20,7 +20,7 @@
   - CLS gives a set of rules and regulation a .Net compliant language should follow. Ex all .Net compliant languages should be OOP languages, Array index should start from 0 etc...
 
 ## Technologies we'll be using during this training
-- .NET 6 and C#
+- .NET 6 SDK (Runtime, toolkit to devlop apps, .Net CLI) and C#
 - SQL (Sql Server)
 - ASP.NET Core for creating web applications
 - Azure Cloud Service for hosting
@@ -44,11 +44,11 @@
     - It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phones, and even the Xbox.
 
 ## Components of .NET Implementation
-    - One or more runtime: Example, .NET Framework CLR, .NET 5 CLR
-        - CLR stands for *Common Language Runtime* and it's a runtime environment provided by .NET
-    - A class library, for example, .NET Framework Base Class Library, or .NET 5 Base Class Library.
-    - Optionally, we have one or more application frameworks, such as ASP.NET Core for web application development, Windows Forms, etc.
-    - Optionally, development tools. Some are shared among multiple implementations.
+- One or more runtime: Example, .NET Framework CLR, .NET 5 CLR
+    - CLR stands for *Common Language Runtime* and it's a runtime environment provided by .NET
+- A class library, for example, .NET Framework Base Class Library, or .NET 5 Base Class Library.
+- Optionally, we have one or more application frameworks, such as ASP.NET Core for web application development, Windows Forms, etc.
+- Optionally, development tools. Some are shared among multiple implementations.
 
 #### CLR? SDK?
 - CLR Stands for Common Language Runtime, and it's runtime environment. It is also know as main execution Engine and is used to run any .Net application.
@@ -75,21 +75,51 @@ These are frameworks that extend .NET platform to provide additional functionali
 ASP.NET: ASP.NET Core to match with .NET Core 
 
 
-## [C#](https://docs.microsoft.com/en-gb/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website) 
-### Anatomy of C# program
+# [Basics of C#](https://docs.microsoft.com/en-gb/users/dotnet/collections/yz26f8y64n7k07?WT.mc_id=dotnet-35129-website) 
+- C# is Case-Sensitive, Object-Oriented, Component Oriented language
+- C# has coding syntax resembling other programming languages like C, C++, Java. Not that they wanted to copy them but for ease of developers to adopt this programming language.
+- It is a type safe language. Type Safety is because of component of .Net known as **CTS** (Common Type System).
+## Anatomy of C# program
 - namespace -> Types -> Type members
+- Namespaces are used to organize C#'s many classes and to control scope of class and methods in large programming project
     - Namespace
         - Types
                 - Members (Methods, variables, properties)
 - Types (Classes, Enums, Structs, Interface, Delegates)
-    -   All types in  C# are inherited directly or indirectly Sytem.Object
-        - **[Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)** - which has the direct value, stored in memory Stack, fast to access.
-            Structs, Enums. Predefined (int, long, short, byte, DateTime, char)
-        - **[Reference Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)** - it stores the reference to that value, value is stored in heap, expensive retrieval process.
-            Classes, interface, Delegates. Predefined -> string, arrays, collections etc.
+    -   All types in  C# are inherited directly or indirectly **System.Object**
+        - **[Value Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)** 
+            - which stores the direct value, 
+            - stored in memory Stack,
+            - Stack is always faster to retrieve data than heap
+            - Every value type has a set of memory set aside for it to occupy (Ex: int can only store 32-bits while a double can store 64-bits) and stack memory is all about structure for efficiency and how data cannot be dynamically changing in size
+            - Ex Predefined (int, long, short, byte, DateTime, char)
+                - Structs - like a class but gets stored in the stack for memory retrieval efficiency
+                - Enums - defines a set of named integral constants
+        - **[Reference Types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)** 
+            - They are datatypes that are stored in the heap and reference variables that are stored in the stack
+            - Think of reference variables as having the address of a house since an address only holds the info on where the house is and not the actual house itself
+            - When you declare a variable of a reference type and not have it point to anything in the beginning, it will have a null value
+                - Null in the coding world means lack of value or there isn't any value at all
+            - Reference variables are stored in the stack while the actual object itself is stored in the heap
+            - retrieval a value from heap is an expensive process.
+            - Why the heap? since memory in the heap can be dynamically changing
+            - Ex Predefined -> string, arrays, collections etc, Classes, interface, Delegates.  
+## Conversion
+- C# is statically typed at compiled time. Meaning after a variable is declared, it cannot be declared again.
+- However, it is possible to change the variable type
 - **[Type Conversion](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/conversions)** : conversion of 1 type into another 
-    - Implicit type conversion : no need to type cast. Ex byte value can be placed in int. No data loss.
-    - Explicit type conversion : type cast it using `<datatype>.Parse(value)`, `Convert.<datatype>(value)`. You can have a data loss if its not fitting in the type.
+    - **Implicit type conversion** : 
+        - Generally, it is when you can convert the type without any data loss
+        - Mostly used with numerical datatypes
+        - No special syntax needed to write and compiler will do it for you
+        - no need to type cast manually/explicitly. 
+        - Ex byte value can be placed in int; converting an int into a double
+
+    - **Explicit type conversion** : 
+        - If there is a risk of losing information, you must perform a **Cast**
+        - Special syntax is needed to write to tell the compiler to do it anyway
+        - Casting is denoted with (datatype)
+        - type cast it using `<datatype>.Parse(value)`, `Convert.<datatype>(value)`. You can have a data loss if its not fitting in the type.
         - The `Parse` method returns the converted number; the `TryParse` method returns a boolean value that indicates whether the conversion succeeded, and returns the converted number in an `out` parameter.
 - **Boxing**- refers to conversion Value type to reference types.
 - **Unboxing**- refers to conversion of reference types to value types.
@@ -114,6 +144,7 @@ ASP.NET: ASP.NET Core to match with .NET Core
 - [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)
 - [What is .NET?](https://www.codecademy.com/articles/what-is-net)
 - [.Net CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/)
+<<<<<<< HEAD
 
 # Beginner's Guide To Console Input In C#
 
@@ -777,3 +808,5 @@ public static class ConsoleHelper
 `Example 13` is using a dependency, but what is happening under the hood is we are using reflection to look up the `TryParse` method for the relative generic type so that the `tryParse` parameter can be made optional. This will work with any type that has a static `TryParse` method with the expected signature, `enum` types, or `string`. If your type does not fit those requirements you can always provide you own `tryParse` parameter.
 
 Feel free to leave a comment below! :)
+=======
+>>>>>>> 7b5df65997701c031727ffdacb0a52a0cefd83a2
