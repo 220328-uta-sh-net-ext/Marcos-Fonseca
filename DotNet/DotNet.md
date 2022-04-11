@@ -929,8 +929,4 @@ public static class ConsoleHelper
 
 
 `Example 13` is using a dependency, but what is happening under the hood is we are using reflection to look up the `TryParse` method for the relative generic type so that the `tryParse` parameter can be made optional. This will work with any type that has a static `TryParse` method with the expected signature, `enum` types, or `string`. If your type does not fit those requirements you can always provide you own `tryParse` parameter.
-# training-code
-This repo contains code base, materials and references with regards to training.
-
-*The most common laptops are Windows PCs. Where MacOS and Linux systems can use package managers, Windows prefers its own GUI wizards.*
 
