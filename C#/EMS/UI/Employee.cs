@@ -19,8 +19,14 @@ namespace UI
             this.firstName = firstName;
             this.lastName = lastName;
             this.id = id;
-            hours = 8;
             Console.WriteLine($"{firstName} {lastName} writes program in C# for {hours} hours over weekend");
         }
+    }
+    // Child/Sub/Derived Class
+
+    class Manager : Employee
+    {
+        public Authority authority;
+
     }
 }
