@@ -1,11 +1,11 @@
-﻿using PokemonUi;
+// See https://aka.ms/new-console-template for more information
+using PokemonUI;
 
-bool repeat = true
+bool repeat = true;
 IMenu menu = new MainMenu();
 
 while (repeat)
 {
-    Console.Clear();
     menu.Display();
     string ans = menu.UserChoice();
 
@@ -13,13 +13,17 @@ while (repeat)
     {
         case "SearchPokemon":
             //call SearchPokemon method
-            Console.WriteLine("SearchPokemon() Method implementation is in progress...");
+            Console.WriteLine("SearchPokemon() Method implementation is in progress....");
             break;
         case "AddPokemon":
-            //call AddPokemon method
-            Console.WriteLine("AddPokemon() Method implementation is in progress...");
+            PokemonOperations.AddDummyPokemon();
+            Console.WriteLine("Actual AddPokemon() method implementaion is in progress.... This is just a dummy");
+            break;
+        case "GetAllPokemons":
+            PokemonOperations.GetAllPokemons();
+            break;
         case "MainMenu":
-            menu = new MainMenu();
+            menu=new MainMenu();
             break;
         case "Exit":
             repeat = false;
