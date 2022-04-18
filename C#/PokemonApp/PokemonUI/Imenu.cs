@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +14,7 @@ namespace PokemonUI
     public interface IMenu
     {
         /// <summary>
-        /// Will display themenu and user choices in the terminal
+        /// Will display the menu and user choices in the terminal
         /// </summary>
         void Display();
 
