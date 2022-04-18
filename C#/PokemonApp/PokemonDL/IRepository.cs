@@ -10,12 +10,11 @@ namespace PokemonDL
         /// </summary>
         /// <param name="poke"></param>
         /// <returns>The pokemon added</returns>
-        Pokemon addPokemon(Pokemon poke);
-
+        Pokemon AddPokemon(Pokemon poke);
         /// <summary>
         /// This method returns all the pokemons from the database
         /// </summary>
         /// <returns>Returns a collection of pokemon as Generic List</returns>
-        List<Pokemon>GetAllPokemon();
+        List<Pokemon> GetAllPokemons();
     }
 }
