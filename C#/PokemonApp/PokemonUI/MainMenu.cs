@@ -29,7 +29,7 @@
                     Console.WriteLine("Please input a valid response");
                     Console.WriteLine("Please press <enter> to continue");
                     Console.ReadLine();
-                    return "MainMenu";
+                    return "MainMenu"; //Testing
             }
         }
     }
