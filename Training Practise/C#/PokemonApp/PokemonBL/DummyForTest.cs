@@ -1,10 +1,20 @@
-﻿namespace PokemonBL
+namespace PokemonBL
 {
     public class DummyForTest
     {
-        public int add(int x, int y)
+        public double Add(params double[] nums)//params keyword allows to pass any number of inputs as parameters
         {
-            return 0;
+            double result = 0;
+            foreach (var n in nums)
+            {
+                result += n;
+            }
+            return result;
+        }
+
+        public bool IsOdd(int n)
+        {
+            return (n % 2 != 0);
         }
     }
 }
