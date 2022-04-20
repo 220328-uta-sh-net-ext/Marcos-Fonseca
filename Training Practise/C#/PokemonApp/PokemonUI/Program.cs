@@ -16,10 +16,10 @@ while (repeat)
             Console.WriteLine("SearchPokemon() Method implementation is in progress....");
             break;
         case "AddPokemon":
-            PokemonOperations.AddDummyPokemon();
-            Console.WriteLine("Actual AddPokemon() method implementaion is in progress.... This is just a dummy");
+            menu = new AddPokemonMenu();
             break;
         case "GetAllPokemons":
+            Console.WriteLine("--------------Retreiving all pokemons---------------");
             PokemonOperations.GetAllPokemons();
             break;
         case "MainMenu":
