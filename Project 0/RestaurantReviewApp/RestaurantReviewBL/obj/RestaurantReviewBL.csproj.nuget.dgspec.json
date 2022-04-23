@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj": {}
+    "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj": {}
   },
   "projects": {
-    "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj": {
+    "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj",
+        "projectUniqueName": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj",
         "projectName": "RestaurantReviewBL",
-        "projectPath": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj",
+        "projectPath": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewBL\\RestaurantReviewBL.csproj",
         "packagesPath": "C:\\Users\\m4rkf\\.nuget\\packages\\",
-        "outputPath": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewBL\\obj\\",
+        "outputPath": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewBL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\m4rkf\\AppData\\Roaming\\NuGet\\NuGet.Config",

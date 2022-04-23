@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewModels\\RestaurantReviewModels.csproj",
+      "projectUniqueName": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewModels\\RestaurantReviewModels.csproj",
       "projectName": "RestaurantReviewModels",
-      "projectPath": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewModels\\RestaurantReviewModels.csproj",
+      "projectPath": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewModels\\RestaurantReviewModels.csproj",
       "packagesPath": "C:\\Users\\m4rkf\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\Marcos-Fonseca\\C#\\P0\\RestaurantReviewApp\\RestaurantReviewModels\\obj\\",
+      "outputPath": "C:\\Revature\\Marcos-Fonseca\\Project 0\\RestaurantReviewApp\\RestaurantReviewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\m4rkf\\AppData\\Roaming\\NuGet\\NuGet.Config",
