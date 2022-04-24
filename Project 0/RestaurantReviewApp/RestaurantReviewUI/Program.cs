@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using RestaurantReviewUI;
 
-//User Interface -> Main Console APP
+MenuFactory.GetMenu("main").Start();
 
-//Fixing Git Issue - Test 6.0
