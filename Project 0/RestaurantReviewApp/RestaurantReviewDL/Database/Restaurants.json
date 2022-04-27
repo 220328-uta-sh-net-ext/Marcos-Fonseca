@@ -1,0 +1,12 @@
+{
+  "Id": 1,
+  "Name": "Brazilian BBQ",
+  "City": "New York City",
+  "State": "New York",
+  "Comment": "Very nice food!",
+  "Rating": [
+    {
+      "Review": 5
+    }
+  ]
+}

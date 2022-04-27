@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RestaurantReviewModels;
 
 namespace RestaurantReviewDL
 {
@@ -17,5 +13,13 @@ namespace RestaurantReviewDL
         List<Restaurant> SearchRestaurants(string searchTerm);
 
         bool IsDuplicate(Restaurant restaurant);
+
+        /// <summary>
+        /// Interface de metodo do login no banco de dados
+        /// </summary>
+        /// <param name="login"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        bool login(string login, string password);
     }
 }

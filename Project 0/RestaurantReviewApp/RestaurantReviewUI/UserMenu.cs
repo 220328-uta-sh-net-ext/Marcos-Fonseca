@@ -7,7 +7,7 @@ using RestaurantReviewDL;
 
 namespace RestaurantReviewUI
 {
-    public static class MenuFactory
+    public static class UserMenu
     {
         public static IMenu GetMenu(string menuString)
         {
@@ -25,7 +25,7 @@ namespace RestaurantReviewUI
                     return new RestaurantMenu(bl);
 
                 case "review":
-                    return new ReviewMenu(bl);
+                    return new NewUser(bl);
 
                 default:
                     return new MainMenu(bl);

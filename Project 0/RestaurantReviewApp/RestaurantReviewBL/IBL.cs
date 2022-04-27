@@ -15,5 +15,7 @@ namespace RestaurantReviewBL
         void AddRestaurant(Restaurant restaurantToAdd);
 
         void AddReview(int restaurantId, Review reviewToAdd);
+
+        
     }
 }

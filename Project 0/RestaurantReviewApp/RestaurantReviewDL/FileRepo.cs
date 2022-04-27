@@ -1,4 +1,8 @@
-﻿// Data Layer -> Handling Storage
+﻿using RestaurantReviewModels;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 
 namespace RestaurantReviewDL
 {
@@ -7,7 +11,8 @@ namespace RestaurantReviewDL
             public FileRepo()
             { }
 
-            private string filePath = "../DL/Restaurants.json";
+            private string filePath = "../RestaurantReviewDL/Restaurants.json";
+            private string jsonString;
 
             public List<Restaurant> GetAllRestaurants()
             {
@@ -33,5 +38,11 @@ namespace RestaurantReviewDL
             {
                 throw new NotImplementedException();
             }
-        }
+            public bool login(string login, string password)
+            {
+                throw new NotImplementedException();
+            }
+
     }
+
+}
