@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +37,7 @@ namespace RestaurantReviewModels
             this.Name = row["Name"].ToString() ?? "";
             this.City = row["City"].ToString() ?? "";
             this.State = row["State"].ToString() ?? "";
-            this.Comment = row["Comment"].ToString() ?? "";
+            //this.Comment = row["Comment"].ToString() ?? "";
         }
 
         public int Id { get; set; }
@@ -88,7 +88,7 @@ namespace RestaurantReviewModels
 
         public string City { get; set; }
         public string State { get; set; }
-        public string Comment { get; set; }
+        //public string Comment { get; set; }
         public List<Review> Reviews { get; set; }
 
         public override string ToString()
@@ -105,7 +105,7 @@ namespace RestaurantReviewModels
             row["Name"] = this.Name;
             row["City"] = this.City;
             row["State"] = this.State;
-            row["comment"] = this.Comment;
+            //row["comment"] = this.Comment;
         }
     }
 
