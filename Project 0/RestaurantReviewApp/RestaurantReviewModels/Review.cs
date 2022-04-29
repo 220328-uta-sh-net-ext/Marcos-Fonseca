@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +27,8 @@ namespace RestaurantReviewModels
 
         public int RestaurantId { get; set; }
 
+        public int UserId { get; set; }
+
         private int _rating;
         public int Rating
         {
@@ -43,6 +45,7 @@ namespace RestaurantReviewModels
         }
         public string Note { get; set; }
 
+        public string Comment { get; set; }
         //override Review's ToString Method for me here
         //That outputs $"Rating: {review.Rating} \t Note: {review.Note}"
 
