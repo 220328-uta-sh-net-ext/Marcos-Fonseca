@@ -10,30 +10,28 @@ namespace RestaurantReviewModels
     {
         public User()
         {
-            login = "johndoe";
-            firstName = "John";
-            lastName = "Doe";
-            email = "john@doe.com";
-            password = "123456";
+            id = 0;
+            login = "a";
+            firstName = "a";
+            lastName = "a";
+            email = "a@a.com";
+            password = "a";
         }
-
+        public int id { get; set; }
         private string login;
         public string Login
         {
             get
             {
                 return login;
-            }            
+            }
             set
             {
-                if (!(value.Length <= 8))
+                if (!(value.Length <= 4))
                 {
-                    password = value;
+                    login = value;
                 }
-                else
-                {
-                    throw new Exception("At least 8 characters required.");
-                }
+
             }
 
         }
@@ -52,7 +50,7 @@ namespace RestaurantReviewModels
                 }
                 else
                 {
-                    throw new Exception("First Name can not be empty");
+                    throw new Exception("Field first Name can not be empty");
                 }
             }
 
@@ -73,7 +71,7 @@ namespace RestaurantReviewModels
                 }
                 else
                 {
-                    throw new Exception("Last Name can not be empty");
+                    throw new Exception("Field last name can not be empty");
                 }
             }
         }
@@ -84,14 +82,11 @@ namespace RestaurantReviewModels
             get { return password; }
             set
             {
-                if (!(value.Length <= 8))
+                if (!(value.Length <= 4))
                 {
                     password = value;
                 }
-                else
-                {
-                    throw new Exception("At least 8 characters required.");
-                }
+
             }
 
 
@@ -112,12 +107,12 @@ namespace RestaurantReviewModels
                 }
                 else if (!value.Contains('@'))
                 {
-                    throw new Exception("invalid e-mail");
+                    throw new Exception("Invalid e-mail format. Please try again.");
 
                 }
                 else
                 {
-                    throw new Exception("e-mail can not be empty");
+                    throw new Exception("Field email can not be empty");
                 }
             }
         }

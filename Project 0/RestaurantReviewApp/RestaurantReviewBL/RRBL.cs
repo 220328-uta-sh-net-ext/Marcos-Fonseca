@@ -1,8 +1,10 @@
-﻿using CustomExceptions;
+﻿using RestaurantReviewModels;
+using System.Data.SqlClient;
+using RestaurantReviewDL;
 
 namespace RestaurantReviewBL
 {
-   
+
     public class RRBL : IBL
     {
         private readonly IRepo _dl;
@@ -18,33 +20,48 @@ namespace RestaurantReviewBL
         /// <returns>list of all restaurants</returns>
         public List<Restaurant> GetAllRestaurants()
         {
-            throw new NotImplementedException();
+            return _dl.GetAllRestaurants();
         }
-
-        /// <summary>
-        /// Adds a new restaurant to the list
-        /// This method will check for the duplicate record before persisting
-        /// </summary>
-        /// <param name="restaurantToAdd">restaurant object to add</param>
-        /// <exception cref="DuplicateRecordException">When there is a restaurant that already exists</exception>
         public void AddRestaurant(Restaurant restaurantToAdd)
         {
-            throw new NotImplementedException();
-        }
+            if (restaurantToAdd.Name.Length < 4)
+            {
+                throw new InvalidOperationException("Restaurant name cannot have less than 4 character");
+            }
+            else
+            {
+                _dl.AddRestaurant(restaurantToAdd);
+            }
 
-        /// <summary>
-        /// Adds a new review to the restaurant that exists on that index
-        /// </summary>
-        /// <param name="restaurantId">index of the restaurant to leave a review for</param>
-        /// <param name="reviewToAdd">a review object to be added to the restaurant</param>
-        public void AddReview(int restaurantId, Review reviewToAdd)
+        }
+        public Restaurant GetRestaurant(string name)
         {
-            throw new NotImplementedException();
+            return _dl.GetRestaurant(name);
         }
-
+        public List<Restaurant> GetRestaurantByCity(string city)
+        {
+            return _dl.GetRestaurantByCity(city);
+        }
+        public List<Restaurant> GetRestaurantByRating(string rating)
+        {
+            return _dl.GetRestaurantByRating(rating);
+        }
         public List<Restaurant> SearchRestaurants(string searchTerm)
         {
-            throw new NotImplementedException();
+
+            if (searchTerm.ToLower() == "all")
+            {
+                return _dl.GetAllRestaurants();
+            }
+            else
+            {
+                return _dl.SearchRestaurants(searchTerm);
+            }
+        }
+        public List<Restaurant> AVGRestaurants()
+        {
+            return _dl.AVGRestaurants();
         }
     }
 }
+

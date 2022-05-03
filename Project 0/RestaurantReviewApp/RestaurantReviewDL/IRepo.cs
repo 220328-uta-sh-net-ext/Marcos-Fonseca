@@ -1,25 +1,21 @@
 ﻿using RestaurantReviewModels;
+using System.Data.SqlClient;
 
 namespace RestaurantReviewDL
 {
     public interface IRepo
     {
         List<Restaurant> GetAllRestaurants();
-
         void AddRestaurant(Restaurant restaurantToAdd);
-
-        void AddReview(int restaurantId, Review reviewToAdd);
-
+        void AddReview(Review reviewToAdd);
+        List<Review> GetReviewRestaurant(Restaurant restaurant);
+        Restaurant GetRestaurant(string name);
         List<Restaurant> SearchRestaurants(string searchTerm);
-
-        bool IsDuplicate(Restaurant restaurant);
-
-        /// <summary>
-        /// Interface de metodo do login no banco de dados
-        /// </summary>
-        /// <param name="login"></param>
-        /// <param name="password"></param>
-        /// <returns></returns>
+        List<Restaurant> GetRestaurantByCity(string city);
+        List<Restaurant> GetRestaurantByRating(string rating);
+        List<Restaurant> AVGRestaurants();
+        void AddUser(User user);
+        User GetUser(string login);
         bool login(string login, string password);
     }
 }

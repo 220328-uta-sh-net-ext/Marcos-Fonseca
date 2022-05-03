@@ -20,4 +20,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantReviewBL\RestaurantReviewBL.csproj" />
+    <ProjectReference Include="..\RestaurantReviewDL\RestaurantReviewDL.csproj" />
+    <ProjectReference Include="..\RestaurantReviewModels\RestaurantReviewModels.csproj" />
+  </ItemGroup>
+
 </Project>

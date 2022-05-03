@@ -13,4 +13,9 @@
     <ProjectReference Include="..\RestaurantReviewModels\RestaurantReviewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
 </Project>

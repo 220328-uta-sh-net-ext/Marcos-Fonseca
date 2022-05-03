@@ -12,7 +12,7 @@ namespace RestaurantReviewUI
     {
         public void Display()
         {
-            Console.WriteLine("Welcome to Restaurant Review App");
+            Console.WriteLine("Welcome to the best Restaurant Review App");
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("Press <3> Sign up");
             Console.WriteLine("Press <2> Sign in");
@@ -28,14 +28,14 @@ namespace RestaurantReviewUI
                 case "0":
                     return "Exit";
                 case "1":
-                    return "Search Restaurant";
+                    return "SearchRestaurant";
                 case "2":
-                    return "Sign in";
+                    return "Singin";
                 case "3":
-                    return "Sign up";
+                    return "Singup";
                 default:
                     Console.WriteLine("Please enter a valid option");
-                    Console.WriteLine("Please press <enter> to continue");
+                    Console.WriteLine("Please press ENTER to continue");
                     Console.ReadLine();
                     return "MainMenu";
             }
