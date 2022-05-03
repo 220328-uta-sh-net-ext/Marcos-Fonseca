@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +11,19 @@ namespace RestaurantReviewModels
         public User()
         {
             id = 0;
+<<<<<<< HEAD
             login = "a";
             firstName = "a";
             lastName = "a";
             email = "a@a.com";
             password = "a";
+=======
+            login = "johndoe";
+            firstName = "John";
+            lastName = "Doe";
+            email = "john@doe.com";
+            password = "123456";
+>>>>>>> f8e59d130539369c719918d0794d2cdfcb5711ce
         }
         public int id { get; set; }
         private string login;

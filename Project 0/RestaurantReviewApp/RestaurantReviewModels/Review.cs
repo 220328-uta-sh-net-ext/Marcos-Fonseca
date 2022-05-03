@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +27,10 @@ namespace RestaurantReviewModels
 
         public int RestaurantId { get; set; }
 
+<<<<<<< HEAD
+=======
+        public int UserId { get; set; }
+>>>>>>> f8e59d130539369c719918d0794d2cdfcb5711ce
 
         private int _rating;
         public int Rating
@@ -45,6 +49,11 @@ namespace RestaurantReviewModels
         public int score { get; set; }
 
         public string Comment { get; set; }
+<<<<<<< HEAD
+=======
+        //override Review's ToString Method for me here
+        //That outputs $"Rating: {review.Rating} \t Note: {review.Note}"
+>>>>>>> f8e59d130539369c719918d0794d2cdfcb5711ce
 
         public override string ToString()
         {
