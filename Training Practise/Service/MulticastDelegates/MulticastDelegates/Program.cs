@@ -8,7 +8,12 @@ namespace MulticastDelegates
 {
     //This multicast delegate can invoke multiple methods when called
     public delegate void DogSound(int repeat);
+<<<<<<< HEAD
 
+=======
+    //This multicast delegate can invoke multiple methods when called
+    
+>>>>>>> e1d79fdefce78d4c0a52449fe524e2035433811d
     public class DogSoundDelegate
     {
         static void Main(string[] args)
@@ -22,6 +27,7 @@ namespace MulticastDelegates
 
             //Create a DogSound delegate reference
             DogSound dg = null;
+            //Create a DogSound delegate reference
 
             //Add new delegate objects
             //+ is overloaded for delegates
@@ -30,10 +36,18 @@ namespace MulticastDelegates
             dg += new DogSound(Happy);
             dg += new DogSound(Hungry);
             dg += new DogSound(Thirst);
+            //Add new delegate objects
+            //+ is overloaded for delegates
+            //basically produces a list of method references
 
             //Call the DogSound delegate
             if (args.Length == 1) dg(Int32.Parse(args[0]));
+<<<<<<< HEAD
             else dg(intVal);
+=======
+            else dg(10);
+            //Call the DogSound delegate
+>>>>>>> e1d79fdefce78d4c0a52449fe524e2035433811d
         }
 
         static void Rage(int repeat)
