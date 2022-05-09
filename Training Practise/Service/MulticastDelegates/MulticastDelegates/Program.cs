@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Multicast point multiple functions
+//You can use + or += to add, - or -= to remove a method
+//Methods will be called in a first-in-first-ou (FIFO) order
 namespace MulticastDelegates
 {
     //This multicast delegate can invoke multiple methods when called
@@ -16,7 +19,7 @@ namespace MulticastDelegates
             string userInput;
             int intVal;
 
-            Console.Write("Pick a number and let the MultiCast begin...  ");
+            Console.Write("Pick a number ");
             userInput = Console.ReadLine();
             intVal = Convert.ToInt32(userInput);
 
