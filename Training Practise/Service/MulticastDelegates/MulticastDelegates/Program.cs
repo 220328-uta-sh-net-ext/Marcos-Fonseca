@@ -7,21 +7,27 @@ using System.Threading.Tasks;
 namespace MulticastDelegates
 {
     public delegate void DogSound(int repeat);
+    //This multicast delegate can invoke multiple methods when called
     
     public class DogSoundDelegate
     {
         static void Main(string[] args)
         {
             DogSound dg = null;
+            //Create a DogSound delegate reference
 
 
             dg += new DogSound(Rage);
             dg += new DogSound(Happy);
             dg += new DogSound(Hungry);
             dg += new DogSound(Thirst);
+            //Add new delegate objects
+            //+ is overloaded for delegates
+            //basically produces a list of method references
 
             if (args.Length == 1) dg(Int32.Parse(args[0]));
             else dg(10);
+            //Call the DogSound delegate
         }
 
         static void Rage (int repeat)
