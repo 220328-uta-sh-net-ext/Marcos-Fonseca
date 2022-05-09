@@ -9,7 +9,7 @@ namespace Lambda
     public class Program
     {
         delegate bool IsTeenAger(Student stud);
-
+       
         public static void Main()
         {
             string userInput;
@@ -19,6 +19,7 @@ namespace Lambda
             userInput = Console.ReadLine();
             intVal = Convert.ToInt32(userInput);
 
+            /*
             //Anonymous Method
             IsTeenAger isTeenAger = delegate (Student s) { return s.Age > 12 && s.Age < 20; };
 
@@ -26,6 +27,7 @@ namespace Lambda
 
              Console.WriteLine(isTeenAger(stud));
              Console.ReadLine();
+            */
 
             //Lambda Expression
             //The Lambda expression evolves from anonymous method by first removing the delegate keyword and parameter type and adding a lambda operator
@@ -33,12 +35,12 @@ namespace Lambda
             //=> is the lambda operator
             //s.Age > 12 && s.Age < 20 is the body expression
 
-            /*IsTeenAger isTeenAger = s => s.Age > 12 && s.Age < 20;
+            IsTeenAger isTeenAger = s => s.Age > 12 && s.Age < 20;
 
             Student stud = new Student() { Age = intVal };
 
             Console.WriteLine(isTeenAger(stud));
-            Console.ReadLine();*/
+            Console.ReadLine();
         }
     }
     public class Student
