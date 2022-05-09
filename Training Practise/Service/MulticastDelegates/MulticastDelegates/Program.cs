@@ -7,13 +7,19 @@ using System.Threading.Tasks;
 namespace MulticastDelegates
 {
     public delegate void DogSound(int repeat);
-    
+
     public class DogSoundDelegate
     {
         static void Main(string[] args)
         {
-            DogSound dg = null;
+            string userInput;
+            int intVal;
 
+            Console.Write("Pick a number and let the MultiCast begin...");
+            userInput = Console.ReadLine();
+            intVal = Convert.ToInt32(userInput);
+
+            DogSound dg = null;
 
             dg += new DogSound(Rage);
             dg += new DogSound(Happy);
@@ -21,10 +27,10 @@ namespace MulticastDelegates
             dg += new DogSound(Thirst);
 
             if (args.Length == 1) dg(Int32.Parse(args[0]));
-            else dg(10);
+            else dg(intVal);
         }
 
-        static void Rage (int repeat)
+        static void Rage(int repeat)
         {
             for (int i = 0; i < repeat; i++)
                 Console.WriteLine("Grrrrrrrrrrrrrrrrrrrrrrr");
@@ -43,7 +49,9 @@ namespace MulticastDelegates
         {
             for (int i = 0; i < repeat; i++)
                 Console.WriteLine("Hmmmm Hmmmm Hmmmm");
-                Console.ReadLine();
+            Console.WriteLine("Who let the dogs out?");
+            Console.WriteLine("Who, who, who, who, who?");
+            Console.ReadLine();
         }
     }
 }
