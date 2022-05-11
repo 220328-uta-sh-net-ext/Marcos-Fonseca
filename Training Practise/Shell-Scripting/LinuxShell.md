@@ -191,3 +191,6 @@ On the other hand, it has SUSE Tumbleweed, a rolling release that packs the late
 
 OpenSUSE relies on the Yast package manager for managing software packages and is recommended for developers and system administrators.
 
+![Office365](https://images.idgesg.net/images/article/2017/06/microsoft-office-365-logo-2016-100727915-large.jpg?auto=webp&quality=85,70)
+
+<a href="url"><img src="https://images.idgesg.net/images/article/2017/06/microsoft-office-365-logo-2016-100727915-large.jpg?auto=webp&quality=85,70)" align="left" height="48" width="48" ></a>
