@@ -21,9 +21,9 @@ Cloud computing offers different services based on three delivery models.
 Saas (software-as-a-service), Paas (platform-as-a-service), and Iaas (infrastructure-as-a-service).
 
 ## What is Saas?
-Software-as-a-service is a service that offers on-demand pay per use of application software to users. Unlike licensed bought programs. This service is platform independent, and you don’t need to install the software on your PC. The cloud runs a single instance of the software and makes it available for multiple end-users. This makes could computing cheap. All the computing resources responsible for delivering SaaS are entirely managed by the provider. This service is accessible via a web browser or lightweight client applications. 
 Software-as-a-service is a service that offers on-demand pay per use of application software to users. Unlike licensed bought programs. This service is platform independent, and you don’t need to install the software on your PC. The cloud runs a single instance of the software and makes it available for multiple end-users. This makes cloud computing cheap. All the computing resources responsible for delivering SaaS are entirely managed by the provider. This service is accessible via a web browser or lightweight client applications. 
-
+Software-as-a-service is a service that offers on-demand pay per use of application software to users. Unlike licensed bought programs. This service is platform independent, and you don’t need to install the software on your PC. The cloud runs a single instance of the software and makes it available for multiple end-users. This makes cloud computing cheap. All the computing resources responsible for delivering SaaS are entirely managed by the provider. This service is accessible via a web browser or lightweight client applications. 
+<br>
 Who uses SaaS? End Customers
 <br>
 Products & Services:
@@ -32,11 +32,10 @@ Products & Services:
 <a href="url"><img src="https://images.idgesg.net/images/article/2017/06/microsoft-office-365-logo-2016-100727915-large.jpg?auto=webp&quality=85,70)" align="left" height="48" width="48" ></a>
 <br>
 <br>
-
-
+<br>
 ## What is Paas?
 Platform-as-a-service is mainly a development environment and is made up of a programming language execution environment, an operating systema, a web server, and a database, all of this encapsulate the environment where users can build, compile, and run their programs without worrying at the underlying infrastructure. In this model you manage data and the application resources. All other resources are managed by the provider.
-
+<br>
 Who uses PaaS? Developers
 <br>
 Products & Services:
@@ -49,7 +48,7 @@ Products & Services:
 <br>
 ## What is Iaas?
 Infrastructure-as-a-service is a service that offers the computing architecture and infrastructure that is it offers all computing resources but in a virtual environment so that multiple users can access them, these resources include data storage, virtualization, servers, and networking. Most providers are responsible for managing the above for resources. If you will use this service, you will be responsible for handling other resources such as applications, data, runtime, and middleware.
-
+<br>
 Who uses IaaS? SysAdmin
 <br>
 Products & Services:
@@ -59,7 +58,6 @@ Products & Services:
 <br>
 <br>
 <br>
-
 # Cloud Computing (Gabriel Garcia)
 the delivery of different services through the internet but are not limited to services. 
 Cloud computing includes tools and applications such as data storage, servers, databases, \
