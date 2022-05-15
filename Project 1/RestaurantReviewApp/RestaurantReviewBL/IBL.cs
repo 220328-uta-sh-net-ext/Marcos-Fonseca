@@ -10,7 +10,6 @@ namespace RestaurantReviewBL
     internal interface IBL
     {
         List<Restaurant> GetAllRestaurants();
-
         void AddRestaurant(Restaurant restaurantToAdd);
         Restaurant GetRestaurant(string name);
         List<Restaurant> SearchRestaurants(string searchTerm);
