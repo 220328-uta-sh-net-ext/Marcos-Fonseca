@@ -82,4 +82,5 @@ GROUP BY b.RestId,a.RestName
 ORDER BY AVG DESC
 
 
-select * from Login
+select * 
+from Login
