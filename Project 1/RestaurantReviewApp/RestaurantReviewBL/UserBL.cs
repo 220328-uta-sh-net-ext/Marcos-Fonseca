@@ -19,7 +19,6 @@ namespace RestaurantReviewBL
         }
 
 
-
         /// <summary>
         /// Check if the login exist
         /// </summary>

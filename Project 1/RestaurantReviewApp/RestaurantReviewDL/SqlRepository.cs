@@ -10,8 +10,9 @@ namespace RestaurantReviewDL
 {
     public class SqlRepository : IRepo
     {
-        private string connectionsStringFilePath = "../RestaurantReviewDL/connection-string.txt";
-        //private string connectionsStringFilePath = "../../../../RestaurantReviewDL/connection-string.txt";
+        //private string connectionsStringFilePath = "../RestaurantReviewDL/connection-string.txt";
+        private string connectionsStringFilePath = "../../../../RestaurantReviewDL/connection-string.txt";
+
 
         /// <summary>
         /// Get all the restaurants

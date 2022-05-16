@@ -5,6 +5,7 @@ namespace RestaurantReviewDL
 {
     public interface IRepo
     {
+
         List<Restaurant> GetAllRestaurants();
         void AddRestaurant(Restaurant restaurantToAdd);
         void AddReview(Review reviewToAdd);
@@ -18,4 +19,5 @@ namespace RestaurantReviewDL
         User GetUser(string login);
         bool login(string login, string password);
     }
+   
 }

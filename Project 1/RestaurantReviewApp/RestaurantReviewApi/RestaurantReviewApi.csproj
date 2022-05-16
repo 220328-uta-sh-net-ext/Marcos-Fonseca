@@ -18,7 +18,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RestaurantReviewBL\RestaurantReviewBL.csproj" />
+    <ProjectReference Include="..\RestaurantReviewDL\RestaurantReviewDL.csproj" />
     <ProjectReference Include="..\RestaurantReviewModels\RestaurantReviewModels.csproj" />
+    <ProjectReference Include="..\RestaurantReviewUI\RestaurantReviewUI.csproj" />
+    <ProjectReference Include="..\RestaurantTest\RestaurantTest.csproj" />
   </ItemGroup>
 
 </Project>
