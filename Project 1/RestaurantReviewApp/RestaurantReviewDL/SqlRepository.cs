@@ -11,7 +11,8 @@ namespace RestaurantReviewDL
     public class SqlRepository : IRepo
     {
         //private string connectionsStringFilePath = "../RestaurantReviewDL/connection-string.txt";
-        private string connectionsStringFilePath = "../../../../RestaurantReviewDL/connection-string.txt";
+        //private string connectionsStringFilePath = "../../../../RestaurantReviewDL/connection-string.txt";
+        private string connectionStringFilePath = "Server = tcp:fonseca220328.database.windows.net,1433; Initial Catalog = RestReviewApp; Persist Security Info = False; User ID = marcos; Password = ; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;";
 
 
         /// <summary>
@@ -22,7 +23,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT * FROM Restaurant";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             connection.Open();
@@ -53,7 +54,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT Top 1 * FROM Restaurant WHERE RestName = @name";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@name", name);
@@ -81,7 +82,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT * FROM Restaurant WHERE RestCity = @city";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@city", city);
@@ -116,7 +117,7 @@ namespace RestaurantReviewDL
                 "WHERE AVG = @rating " +
                 "GROUP BY b.RestId,a.RestName;";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@rating", rating);
@@ -145,7 +146,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "INSERT INTO Restaurant (RestName,RestCity,RestState,RestPhone) VALUES (@name,@city,@state,@phone)";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@name", restaurantToAdd.Name);
@@ -168,7 +169,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT * FROM Restaurant WHERE RestName = @searchTerm;";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@searchTerm", searchTerm);
@@ -197,7 +198,7 @@ namespace RestaurantReviewDL
                 "GROUP BY b.RestId,a.RestName " +
                 "ORDER BY AVG DESC;";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             connection.Open();
@@ -225,7 +226,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "INSERT INTO Review (RestID,Score,Comment) VALUES (@restaurantId,@score,@comment)";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@restaurantId", reviewToAdd.RestaurantId);
@@ -245,7 +246,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT * FROM Review WHERE RestId = @searchTerm;";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@searchTerm", restaurant.Id);
@@ -275,7 +276,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "INSERT INTO Login (Login,PASSWORD,Email,FirstName,LastName) VALUES (@login,@password,@email,@firstname,@lastname);";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@login", user.Login);
@@ -299,7 +300,7 @@ namespace RestaurantReviewDL
         {
             string commandString = "SELECT * FROM Login WHERE Login = @login";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@login", login);
@@ -331,7 +332,7 @@ namespace RestaurantReviewDL
 
             string commandString = "SELECT * FROM Login WHERE Login = @login AND PASSWORD = @password;";
 
-            var conn = File.ReadAllText(connectionsStringFilePath);
+            var conn = connectionStringFilePath;
             using SqlConnection connection = new(conn);
             using SqlCommand command = new(commandString, connection);
             command.Parameters.AddWithValue("@login", login);

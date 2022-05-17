@@ -2,11 +2,11 @@
 using RestaurantReviewModels;
 using RestaurantReviewBL;
 using RestaurantReviewDL;
-using System.Configuration;
-using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Hosting;
 
 namespace RestaurantReviewApi.Controllers
 {
+    
     [ApiController]
     [Route("[controller]")]
     public class RestaurantController : Controller
@@ -19,6 +19,7 @@ namespace RestaurantReviewApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public ActionResult<List<Restaurant>> GetAllRestaurants()
         {
+            
             try
             {
                 List<Restaurant> list = new RRBL(sqlRepository).GetAllRestaurants();
