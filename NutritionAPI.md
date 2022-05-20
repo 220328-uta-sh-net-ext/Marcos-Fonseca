@@ -1,0 +1,5 @@
+## Recipe - Food - Nutrition API Documentation
+
+The spoonacular Nutrition, Recipe, and Food API allows you to access over 365,000 recipes and 86,000 food products. Our food ontology and semantic recipe search engine makes it possible to search for recipes using natural language queries, such as “gluten free brownies without sugar” or “low fat vegan cupcakes.” You can automatically calculate the nutritional information for any recipe, analyze recipe costs, visualize ingredient lists, find recipes for what’s in your fridge, find recipes based on special diets, nutritional requirements, or favorite ingredients, classify recipes into types and cuisines, convert ingredient amounts, or even compute an entire meal plan. With our powerful API, you can create many kinds of food and especially nutrition apps.
+
+Special diets/dietary requirements currently available include: vegan, vegetarian, pescetarian, gluten free, grain free, dairy free, high protein, low sodium, low carb, Paleo, Primal, ketogenic, FODMAP, and Whole 30. We will soon be adding Weight Watcher points, too.
