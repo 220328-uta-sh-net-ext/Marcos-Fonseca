@@ -1,13 +1,7 @@
-# Restaurant Review 
+# Restaurant Review
 
-## common requirements
-* good Git practices
-* ~~CI with compile, automated tests, static analysis~~
-* ~~CD to cloud service (like Azure App Service)~~
-* Have you app containerized using a Dockerfile. make sure you have your image ready and pushed on docker hub.
-* Deploy your app on Azure App service (either code or docker container mode).
-* try to have swagger working in your deployed app.
-* [optional] Have a Console App consuming the Api using HttpClient
+## Overview
+- The restaurant review application is a software that lets customers leave reviews for restaurants. Designed with functionality that would help choosing the next restaurant to eat at much easier! 
 
 ### functionality
 * server-side validation
@@ -47,9 +41,6 @@
 * logging
 * implement hypermedia, or, implement an API Description Language, e.g. using Swashbuckle / Swagger
 
-## Overview 
-
-- The restaurant review application is a software that lets customers leave reviews for restaurants. Designed with functionality that would help choosing the next restaurant to eat at much easier! 
 
 ### Functionality 
 
@@ -67,9 +58,6 @@
 - User 
 - Restaurant 
 - Review 
-
-### Note 
-- Add as much models as you would need for your design 
 
 ### Additional requirements 
 - Exception Handling 
