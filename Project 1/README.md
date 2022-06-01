@@ -1,6 +1,7 @@
 # Restaurant Review
 
-## Overview
+### Overview
+
 - The restaurant review application is a software that lets customers leave reviews for restaurants. Designed with functionality that would help choosing the next restaurant to eat at much easier! 
 
 ### Functionality 
