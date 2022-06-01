@@ -18,23 +18,6 @@
 * persistent data
 * logging of exceptions
 
-### Design
-
-* ADO.Net for middleware either with connected or disconnected approach
-* Azure SQL DB in third normal form; include a database diagram and the script to generate Db and tables.
-
-### core / domain / business logic
-* class library
-* contains all business logic
-* contains domain classes (restaurant/review/user)
-
-### data access
-* class library
-* contains ADO.Net code
-* contains data access logic but no business logic
-* Repository pattern for separation of concerns
-
-
 ### Tech Stack 
 - C# 
 - Xunit or NUnit
