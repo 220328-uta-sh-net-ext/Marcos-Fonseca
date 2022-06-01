@@ -13,11 +13,7 @@
 - view details of restaurants as a user
 - view reviews of restaurants as a user
 - calculate reviews’ average rating for each restaurant 
-- search restaurant (by name, rating, zip code, etc.) 
-- server-side validation
-- exception handling
-- persistent data
-- logging of exceptions
+- search restaurant (by name, rating, zip code, etc.)
 
 ### Tech Stack 
 - C# 
